@@ -2,7 +2,7 @@
 ### Description
 PLACO implements a variant-level formal statistical test of pleiotropy of two traits using summary-level GWAS data, and can account for potential correlation across traits, such as that arising due to shared controls in case-control studies. The R function `placo` implements this pleiotropic association test. For details of this statistical method, please refer/cite:
 
-Ray, D., Chatterjee, N. "[A Powerful Method for Pleiotropic Analysis under Composite Null Hypothesis Identifies Novel Shared Loci Between Type 2 Diabetes and Prostate Cancer](https://doi.org/10.1101/2020.04.11.037630)". *bioRxiv*, https://doi.org/10.1101/2020.04.11.037630
+Ray, D., Chatterjee, N. "[A Powerful Method for Pleiotropic Analysis under Composite Null Hypothesis Identifies Novel Shared Loci Between Type 2 Diabetes and Prostate Cancer](https://doi.org/10.1101/2020.04.11.037630)". *PLoS Genetics* 16(12): e1009218, https://doi.org/10.1371/journal.pgen.1009218
 
 **Key Words:** Composite null hypothesis; GWAS summary statistics; Intersection-union test; Meta-analysis; Multiple traits; Overlapping samples; Pleiotropy
 
