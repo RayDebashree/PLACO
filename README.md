@@ -30,9 +30,11 @@ Version 0.1.1 - August 30, 2020
 2. PLACO uses the summary statistics for all variants genome-wide to estimate correlation matrix of the traits. If two studies have overlapping samples/individuals (which may or may not be known), the estimated correlation matrix reflects this overlap. After decorrelating the Z-scores using this correlation matrix, PLACO may be applied.
     * Caution: PLACO does not work well if the two traits are strongly correlated. We advocate using PLACO for two uncorrelated or moderately correlated traits.
     * Caution: PLACO requires genome-wide summary data to infer pleiotropic association of each variant, and cannot be used when summary data on only a handful of candidate genetic variants are available.
-    * Caution: PLACO cannot be applied in a hypothesis driven fashion (e.g., test pleiotropy of each variant from a set of variants known to be significantly associated with one trait).
+    * Caution: PLACO cannot be applied in a hypothesis driven fashion (e.g., test pleiotropy of only a set of variants known to be significantly associated with one trait).
 
 3. Since PLACO uses only summary statistics, it is assumed that all necessary covariate/confounder adjustments were performed when the single-trait summary statistics were obtained.
+    * Caution: Harmonize the same effect allele across the two studies/traits so that Z-scores from the two datasets can be jointly analyzed appropriately using PLACO.
+    * Recommendation: Remove variants with ![equation](http://www.sciweavers.org/tex2img.php?eq=%20Z%5E%7B2%7D%3E80%20&bc=White&fc=Black&im=png&fs=12&ff=arev&edit=0) (squared Z-scores above 80), similar to recommendation for LD-score regression techniques, since extremely large effect sizes can influence PLACO to show spurious signals.
 
 4. PLACO does not require unrelatedness of samples. When samples are related (e.g., in family-based GWAS), PLACO can use the summary statistics from [EMMAX](https://genome.sph.umich.edu/wiki/EMMAX) (or other univariate mixed model framework) to appropriately test for genetic associations.
 
