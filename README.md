@@ -38,7 +38,7 @@ Version 0.1.1 - August 30, 2020
     * Caution: Harmonize the same effect allele across the two studies/traits so that Z-scores from the two datasets can be jointly analyzed appropriately using PLACO.
     * Recommendation: Remove variants with ![equation](http://www.sciweavers.org/tex2img.php?eq=%20Z%5E%7B2%7D%3E80%20&bc=White&fc=Black&im=png&fs=12&ff=arev&edit=0) (squared Z-scores above 80), similar to recommendation for LD-score regression techniques, since extremely large effect sizes can influence PLACO to show spurious signals.
 
-4. PLACO does not require unrelatedness of samples. When samples are related (e.g., in family-based GWAS), PLACO can use the summary statistics from [EMMAX](https://genome.sph.umich.edu/wiki/EMMAX) (or other univariate mixed model framework) to appropriately test for genetic associations.
+4. PLACO does not require unrelatedness of samples. When samples are related, PLACO can use the summary statistics from [EMMAX](https://genome.sph.umich.edu/wiki/EMMAX) (or other univariate mixed model framework) to appropriately test for genetic associations.
 
 5. PLACO does not assume homogeneity of genetic effects of the two traits. 
 
