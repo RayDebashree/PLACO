@@ -1,8 +1,10 @@
 
 ### Description
-PLACO implements a variant-level formal statistical test of pleiotropy of two traits using summary-level GWAS data, and can account for potential correlation across traits, such as that arising due to shared controls in case-control studies. The R function `placo` implements this pleiotropic association test. For details of this statistical method, please refer/cite:
+PLACO implements a variant-level formal statistical test of pleiotropy of two traits using summary-level GWAS data, and can account for potential correlation across traits, such as that arising due to shared controls in case-control studies. The R function `placo` implements this pleiotropic association test. PLACO may also be used on summary-level data from family-based studies such as trios. For details of this statistical method, please refer/cite:
 
-Ray, D., Chatterjee, N. "A powerful method for pleiotropic analysis under composite null hypothesis identifies novel shared loci between Type 2 Diabetes and Prostate Cancer". *PLoS Genetics* 16(12): e1009218, https://doi.org/10.1371/journal.pgen.1009218
+1. Ray, D., Chatterjee, N. (2020) "A powerful method for pleiotropic analysis under composite null hypothesis identifies novel shared loci between Type 2 Diabetes and Prostate Cancer". *PLoS Genetics* 16(12): e1009218, https://doi.org/10.1371/journal.pgen.1009218
+
+2. Ray, D. et al. (2021) "Pleiotropy method reveals genetic overlap between orofacial clefts at multiple novel loci from GWAS of multi-ethnic trios". *PLoS Genetics* 17(7): e1009584, https://doi.org/10.1371/journal.pgen.1009584
 
 **Key Words:** Composite null hypothesis; GWAS summary statistics; Intersection-union test; Meta-analysis; Multiple traits; Overlapping samples; Pleiotropy
 
@@ -43,3 +45,5 @@ Version 0.1.1 - August 30, 2020
 6. PLACO can only detect statistical association of a variant with two traits, and cannot distinguish between the various types of pleiotropy such as biological or horizontal or vertical/mediated.
 
 7. If you receive an error message like `the integral is probably divergent`, try reducing the absolute tolerance parameter `AbsTol`.
+
+8. For more details on using this R program, please refer to the Supplementary S1 Appendix of Ray et al (2021): https://doi.org/10.1371/journal.pgen.1009584.s001 
