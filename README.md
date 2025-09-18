@@ -2,7 +2,7 @@
 ### Description
 PLACO+ implements a variant-level formal statistical test of pleiotropy of two traits using summary-level GWAS data, and can account for potential correlation across traits, such as that arising due to measurement of traits on the same set of individuals or due to shared controls in case-control studies. The R function `placo.plus()` implements this pleiotropic association test. PLACO+ may also be used on summary-level data from family-based studies such as trios. For details of this statistical method, please refer/cite:
 
-1. Park, J., Ray, D. (2025+) "A robust pleiotropy method with applications to lipid traits and to inflammatory bowel disease subtypes with sample overlap". *In revision*
+1. Park, J., Ray, D. (2025) "A robust pleiotropy method with applications to lipid traits and to inflammatory bowel disease subtypes with sample overlap". *Human Genetics and Genomics Advances*, https://doi.org/10.1016/j.xhgg.2025.100501
 
 PLACO, originally proposed in 2020 and meant for two independent/uncorrelated traits, is a special case of PLACO+. The R function `placo()` is recommended for uncorrelated traits since `placo.plus` can take longer time. For details of this method, please refer/cite:
 
